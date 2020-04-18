@@ -5,7 +5,6 @@ const initialState = {
 };
 
 const formReducer = (state = initialState, action) => {
-	console.log(action);
 	switch (action.type) {
 		case HANDLE_FORM_CHANGE:
 			return {
@@ -14,7 +13,6 @@ const formReducer = (state = initialState, action) => {
 			};
 
 		case HANDLE_FORM_SUBMIT:
-			console.log('called');
 			return {
 				...state,
 				input: '',

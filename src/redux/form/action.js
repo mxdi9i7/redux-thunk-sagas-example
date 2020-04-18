@@ -15,7 +15,14 @@ export const handleFormSubmit = () => ({
 export const handleFormSubmitAndAddTodo = () => {
 	return (dispatch, getState) => {
 		const state = getState();
-		dispatch(addTodo({ text: state.form.input, isComplete: false }));
-		dispatch(handleFormSubmit());
+		const {
+			form: { input },
+		} = state;
+		if (input) {
+			dispatch(addTodo({ text: input, isComplete: false }));
+			dispatch(handleFormSubmit());
+		} else {
+			alert('Input cannot be empty');
+		}
 	};
 };
