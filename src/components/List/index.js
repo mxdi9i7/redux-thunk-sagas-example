@@ -1,9 +1,10 @@
 import React from 'react';
 import Todo from '../Todo';
 import { connect } from 'react-redux';
-import { deleteTodo, completeTodo } from '../../redux/todos/action';
+import { deleteTodo, completeTodo } from '../../redux/todos/actions';
 
-const component = ({ todos, handleDelete, handleCompleteCheck }) => {
+const Component = ({ dispatch, todos, handleDelete, handleCompleteCheck }) => {
+	console.log(dispatch);
 	return (
 		<div>
 			{todos.map((todo, i) => (
@@ -33,6 +34,6 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 	};
 };
 
-const List = connect(mapStateToProps, mapDispatchToProps)(component);
+const List = connect(mapStateToProps, mapDispatchToProps)(Component);
 
 export default List;

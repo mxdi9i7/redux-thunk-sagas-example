@@ -1,4 +1,4 @@
-import { HANDLE_FORM_CHANGE, HANDLE_FORM_SUBMIT } from './action';
+import { HANDLE_FORM_CHANGE, HANDLE_FORM_SUBMIT } from './actions';
 
 const initialState = {
 	input: '',

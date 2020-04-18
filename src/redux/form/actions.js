@@ -1,4 +1,4 @@
-import { addTodo } from '../todos/action';
+import { addTodo } from '../todos/actions';
 
 export const HANDLE_FORM_CHANGE = 'HANDLE_FORM_CHANGE';
 export const HANDLE_FORM_SUBMIT = 'HANDLE_FORM_SUBMIT';

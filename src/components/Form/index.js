@@ -2,7 +2,7 @@ import React from 'react';
 import {
 	handleFormChange,
 	handleFormSubmitAndAddTodo,
-} from '../../redux/form/action';
+} from '../../redux/form/actions';
 import { connect } from 'react-redux';
 
 const component = ({ handleFormSubmit, handleFormChange, input }) => {

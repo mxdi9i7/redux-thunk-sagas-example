@@ -1,5 +1,5 @@
 import initialTodo from '../../constants/initialTodo';
-import { ADD_TODO, COMPLETE_TODO, DELETE_TODO, FETCH_TODOS } from './action';
+import { ADD_TODO, COMPLETE_TODO, DELETE_TODO, FETCH_TODOS } from './actions';
 
 const todoReducer = (state = initialTodo, action) => {
 	const { index } = action;
